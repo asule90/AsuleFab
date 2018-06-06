@@ -1,7 +1,7 @@
 [![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=true)](http://www.apache.org/licenses/LICENSE-2.0)
 ![minSdkVersion 16](https://img.shields.io/badge/minSdkVersion-16-red.svg?style=true)
 ![compileSdkVersion 24](https://img.shields.io/badge/compileSdkVersion-24-yellow.svg?style=true)
-
+[ ![Download](https://api.bintray.com/packages/asule/AsuleFab/AsuleFab/images/download.svg?version=v1.0.0) ](https://bintray.com/asule/AsuleFab/AsuleFab/v1.0.0/link)
 
 ![Icon](https://raw.githubusercontent.com/asule90/AsuleFab/development/art/AsuleFab-ic_launcher.jpg)
 
@@ -11,6 +11,14 @@ AsuleFab for universal badge or any notification.
 
 ![Sample](https://raw.githubusercontent.com/asule90/AsuleFab/development/art/AsuleFab-Demo.gif)
 
+## Installation
+Include the library in your `build.gradle`
+
+```groovy
+dependencies{
+    implementation 'com.asepsulaeman.asulefab:asulefab:1.0.0'
+}
+```
 
 ## Usage
 
