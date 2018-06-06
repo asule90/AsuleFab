@@ -3,10 +3,11 @@
 ![compileSdkVersion 24](https://img.shields.io/badge/compileSdkVersion-24-yellow.svg?style=true)
 
 
-
 ![Icon](https://raw.githubusercontent.com/asule90/AsuleFab/development/art/AsuleFab-ic_launcher.jpg)
+
 # AsuleFab
-A FloatingActionButton subclass that shows a counter badge on right top corner
+A FloatingActionButton subclass that shows a small notification badge on right top corner. Inspired by andremion/CounterFab.
+AsuleFab for universal badge or any notification.
 
 ![Sample](https://raw.githubusercontent.com/asule90/AsuleFab/development/art/AsuleFab-Demo.gif)
 
@@ -28,7 +29,9 @@ and programmatically you can use one of these methods:
 ```java
 AsuleFab asuleFab = (AsuleFab) findViewById(R.id.counter_fab);
 asuleFab.setNotification("*"); // Set the text to show on badge
-asuleFab.getNotification(); // Get the current text
+asuleFab.setNotification(""); // clear notification and hide badge
+asuleFab.setNotification("1"); // can also a numeric
+asuleFab.getNotification(); // Get the current notif
 ```
 
 ## Customization
