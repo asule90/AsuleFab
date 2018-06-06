@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (c) 2017. André Mion
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Original work Copyright (c) 2017. André Mion
+  ~ Modified work Copyright 2018 Asep Sulaeman
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -29,24 +31,5 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <RadioGroup
-        android:id="@+id/counter_mode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checkedButton="@+id/increase_button">
-
-        <RadioButton
-            android:id="@+id/increase_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/counter_mode_increase" />
-
-        <RadioButton
-            android:id="@+id/decrease_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/counter_mode_decrease" />
-
-    </RadioGroup>
 
 </FrameLayout>

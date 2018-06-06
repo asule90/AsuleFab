@@ -6,7 +6,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.1.2'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
     }
 }
@@ -27,33 +27,32 @@ allprojects {
         minSdkVersion = 16
         targetSdkVersion = 26
 
-        versionCode = 4
-        versionName = "1.0.3"
+        versionCode = 1
+        versionName = "1.0.0"
 
-        supportLibraryVersion = '26.1.0'
+        supportLibraryVersion = '27.1.1'
 
         junitVersion = '4.12'
         espressoVersion = '2.2.+'
 
-        name = 'CounterFab'
-        description = 'A FloatingActionButton subclass that shows a counter badge on right top corner'
-        url = 'https://play.google.com/store/apps/details?id=com.andremion.counterfab.sample'
+        name = 'AsuleFab'
+        description = 'A FloatingActionButton subclass that shows a small notification badge on right top corner'
 
         licenseName = 'The Apache Software License, Version 2.0'
         licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
         allLicenses = ["Apache-2.0"]
 
         bintrayRepo = 'github'
-        group = 'com.github.andremion'
-        artifact = 'counterfab'
+        group = 'com.github.asule90'
+        artifact = 'asulefab'
 
-        gitUrl = 'https://github.com/andremion/' + name
+        gitUrl = 'https://github.com/asule90/' + name
         vcsUrl = gitUrl + '.git'
         issueTracker = gitUrl + '/issues'
 
-        developerId = 'andremion'
-        developerName = 'André Mion'
-        developerEmail = 'andremion@gmail.com'
+        developerId = 'asule'
+        developerName = 'Asep Sulaeman'
+        developerEmail = 'asepsulaeman90@gmail.com'
     }
 }
 

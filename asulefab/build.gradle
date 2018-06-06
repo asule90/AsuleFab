@@ -1,15 +1,21 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+ext {
+    PUBLISH_GROUP_ID = 'com.asepsulaeman.asulefab'
+    PUBLISH_ARTIFACT_ID = 'asulefab'
+    PUBLISH_VERSION = '1.0.0'
+}
 
 android {
     compileSdkVersion project.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.andremion.counterfab.sample"
         minSdkVersion project.ext.minSdkVersion
         targetSdkVersion project.ext.targetSdkVersion
         versionCode project.ext.versionCode
         versionName project.ext.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -22,10 +28,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':asulefab')
     implementation "com.android.support:design:$supportLibraryVersion"
 
     testImplementation "junit:junit:$junitVersion"
 
     androidTestImplementation "com.android.support.test.espresso:espresso-core:$espressoVersion"
 }
+
+// or use the remote copy to keep update with latest changes
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
